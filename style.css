@@ -1,0 +1,161 @@
+:root {
+  --main-color: #0065fc;
+}
+
+*, html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+}
+
+.brand-logo {
+  padding: 5px;
+}
+
+.brand-logo > img {
+  width: 100px;
+}
+
+nav,
+nav > ul,
+.nav-link,
+.nav-link > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link > a,
+.nav-signup > a {
+  padding: 2rem;
+}
+
+.nav-link > a:hover,
+.nav-link[data-active="true"] {
+  border-top: var(--main-color) solid 3px;
+  color: var(--main-color);
+}
+
+.nav-link > a:hover {
+  padding-top: calc(2rem - 3px);
+}
+
+.nav-link[data-active="true"] > a:hover {
+  border-top: transparent solid 3px;
+}
+
+.nav-signup > a {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/*________________BODY______________________*/
+
+main {
+}
+
+.search > h1 {
+  margin-bottom: 0.4rem;
+}
+
+.search > p {
+}
+
+.search-form {
+}
+
+.search-input {
+  height: 60px;
+  display: flex;
+}
+
+.search-icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 60px;
+  border-radius: 20px 0 0 20px;
+}
+
+.fa-location-dot {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: auto;
+}
+
+.search-field {
+  border: 1px solid #f2f2f2;
+  width: 200px;
+}
+
+.search-field::placeholder {
+  text-align: center;
+}
+
+.search-btn {
+  width: 136px;
+  background-color: var(--main-color);
+  border-radius: 0 20px 20px 0;
+  border: 0;
+  color: white;
+}
+
+.filters-container {
+  display: flex;
+}
+
+.filter-label {
+  display: block;
+  padding: 1rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+}
+
+.filter-checkbox {
+  visibility: hidden;
+}
