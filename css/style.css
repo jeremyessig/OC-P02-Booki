@@ -5,6 +5,7 @@
   --border-color: #d9d9d9;
 
   --hosting-grid-gap: 32px;
+  --hosting-grid-gap-mobile: 16px;
 }
 
 *,
@@ -90,7 +91,7 @@ nav > ul,
 
 .nav-link > a,
 .nav-signup > a {
-  padding: 2rem;
+  padding: 10px;
 }
 
 .nav-link > a:hover,
@@ -100,7 +101,7 @@ nav > ul,
 }
 
 .nav-link > a:hover {
-  padding-top: calc(2rem - 3px);
+  padding-top: calc(10px - 3px);
 }
 
 .nav-link[data-active="true"] > a:hover {
@@ -181,12 +182,13 @@ main {
 
 .filters-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .filters-container > label,
 input {
-  margin: 0 0.5%;
+  margin: 1% 1%;
 }
 
 .filter-label {
@@ -232,6 +234,10 @@ input {
 
 .filter-checkbox {
   visibility: hidden;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .search-info {
@@ -360,6 +366,7 @@ input {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  background-color: transparent;
 }
 
 /*__________ Panneau latérale droit*/
