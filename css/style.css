@@ -16,12 +16,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Raleway, sans-serif;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("https://fonts.google.com/specimen/Raleway");
+  font-family: "Raleway", sans-serif;
 }
 
 ul {
@@ -43,14 +38,14 @@ a:hover {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .section-container {
   max-width: 1640px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 32px;
 }
 
 .grid-container {
@@ -119,7 +114,7 @@ main {
 }
 
 .search > h1 {
-  margin-bottom: 0.4rem;
+  margin-bottom: 12px;
 }
 
 .search > p {
@@ -161,7 +156,7 @@ main {
 
 .fa-location-dot {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 19px;
   margin: auto;
 }
 
@@ -225,9 +220,9 @@ input {
 .filter-label {
   display: block;
   position: relative;
-  padding: 1rem;
+  padding: 16px;
   border: 2px solid var(--border-color);
-  border-radius: 2rem;
+  border-radius: 32px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -264,7 +259,7 @@ input {
   width: 100%;
   height: 100%;
   color: var(--main-color);
-  font-size: 1.2rem;
+  font-size: 19px;
 }
 
 .filter-label > span {
@@ -373,7 +368,7 @@ a.card-hosting:hover {
 }
 
 .card-title {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -385,7 +380,7 @@ a.card-hosting:hover {
   margin-right: 3px;
 }
 
-.card-description > span {
+.card-description[data-low-price="true"] > span {
   font-weight: bold;
 }
 
@@ -408,7 +403,7 @@ a.card-hosting:hover {
 
 .show-more > button {
   border: none;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   background-color: transparent;
@@ -529,6 +524,10 @@ a.card-hosting:hover {
 .card-title-gallery > span {
   font-weight: bold;
   margin-left: 22px;
+}
+
+.card-gallery:hover {
+  color: black;
 }
 
 .reverse-col {
