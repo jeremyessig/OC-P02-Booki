@@ -50,6 +50,8 @@
     border-bottom: var(--main-color) solid 3px;
   }
 
+  /*____________FORMULAIRE DE RECHERCHE_______________*/
+
   .search-input {
     margin: 40px 0;
     width: 100%;
@@ -83,6 +85,7 @@
     width: 82px;
   }
 
+  /*__________________HEBERGEMENTS et ACTIVITES____________________*/
   .container-round {
     background-color: var(--secondary-color);
     border-radius: 0px;
@@ -139,6 +142,8 @@
   .card-gallery {
     height: var(--card-height-mobile) !important;
   }
+
+  /*_____________PIED DE PAGE________________*/
 
   footer {
     height: auto;

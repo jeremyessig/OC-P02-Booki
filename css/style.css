@@ -63,7 +63,7 @@ h1 {
   justify-content: center;
 }
 
-/*___________En tête_________________________*/
+/*___________EN TETE_________________________*/
 
 header {
   display: flex;
@@ -108,7 +108,7 @@ nav > ul,
   border-top: transparent solid 3px;
 }
 
-/*________________BODY______________________*/
+/*________________FORMULAIRE DE RECHERCHE______________________*/
 
 main {
 }
@@ -289,7 +289,7 @@ input {
   border-radius: 50%;
 }
 
-/*________________HOSTING__________________*/
+/*________________HEBERGEMENTS__________________*/
 
 #hosting {
   display: flex;
