@@ -26,15 +26,19 @@
     </header>
     <main>
         <!-- SEARCH -->
-        <section id="search" class="section-container search">
+        <section id="search-form" class="section-container search">
 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form action="" method="GET" class="search-form">
                     <div class="search-input">
-                        <span class="search-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <label class="search-icon" for="search"><i class="fa-solid fa-location-dot"></i></label>
                         <input type="search" name="search" placeholder="Marseille, France" class="search-field">
-                        <input type="submit" value="Rechercher" id="search" class="search-btn">
+                        <!-- <input type="submit" value="Rechercher" id="search" class="search-btn"> -->
+                        <button type="submit" value="search" class="search-btn">
+                            <span>Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </div>
                     <div class="filters">
                         <h2>Filtres</h2>
@@ -291,7 +295,7 @@
                     <div class="gallery-row">
                         <a href="#" class="card-gallery">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vue du port avec des bateaux">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Vieux Port</span>
@@ -303,7 +307,7 @@
                     <div class="gallery-row">
                         <a href="#" class="card-gallery" data-width="big">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Vue du fort">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Fort de Pomègues</span>
@@ -313,7 +317,7 @@
                     <div class="gallery-row reverse-col">
                         <a href="#" class="card-gallery" data-width="small">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Vue de l'île depuis la côte">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Îles du Frioul</span>
@@ -325,7 +329,7 @@
                     <div class="gallery-row">
                         <a href="#" class="card-gallery">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Vue des calanques depuis la côte">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Parc National des Calanques</span>
@@ -337,7 +341,7 @@
                     <div class="gallery-row">
                         <a href="#" class="card-gallery " data-width="small">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vue sur l'église de Dame-la-Garde au loin">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Notre-Dame-de-la-Garde</span>
@@ -347,7 +351,7 @@
                     <div class="gallery-row">
                         <a href="#" class="card-gallery" data-width="big">
                             <div class="card-img-gallery">
-                                <img src="assets/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                                <img src="assets/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Vue du parc Longchamp">
                             </div>
                             <div class="card-title-gallery">
                                 <span>Parc Longchamp</span>
@@ -363,25 +367,25 @@
         <div class="section-container">
             <div class="footer-grid">
                 <div class="footer-container">
-                    <h3>A propos</h3>
+                    <strong>A propos</strong> 
                     <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales de vente</li>
-                        <li>Données et confidentialité</li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div class="footer-container">
-                    <h3>Nos hébergements</h3>
+                    <strong>Nos hébergements</strong>    
                     <ul>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
                     </ul>
                 </div>
                 <div class="footer-container">
-                    <h3>Assistance</h3>
+                    <strong>Assistance</strong> 
                     <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>

@@ -70,6 +70,10 @@
     width: 100%;
   }
 
+  nav {
+    margin-top: 16px;
+  }
+
   .nav-link[data-active="true"] {
     border-top: none;
   }
@@ -78,6 +82,7 @@
     padding: 10px;
     border-bottom: rgb(228, 228, 228) solid 3px;
     width: 100%;
+    font-size: 20px;
   }
 
   .nav-link[data-active="true"] > a {
@@ -96,10 +101,29 @@
     margin: 40px 0;
     width: 100%;
     justify-content: center;
+    position: relative;
   }
 
   .search-field {
     width: 100%;
+    margin-right: 26px;
+  }
+
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+  }
+
+  .search-btn > i {
+    display: block;
+  }
+
+  .search-btn > span {
+    display: none;
   }
 
   .search-icon {

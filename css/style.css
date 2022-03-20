@@ -1,5 +1,6 @@
 :root {
   --main-color: #0065fc;
+  --main-color-hover: #1472ff;
   --main-color-light: #deebff;
   --secondary-color: #f2f2f2;
   --border-color: #d9d9d9;
@@ -37,13 +38,17 @@ a {
   color: black;
 }
 
+a:hover {
+  color: var(--main-color);
+}
+
 h1 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .section-container {
-  max-width: 1440px;
+  max-width: 1640px;
   margin: auto;
   padding: 0 2rem;
 }
@@ -91,7 +96,7 @@ nav > ul,
 }
 
 .nav-link > a {
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .nav-link > a:hover,
@@ -138,6 +143,22 @@ main {
   border-radius: 15px 0 0 15px;
 }
 
+.search-icon:hover :first-child {
+  animation: scale-up-center 1s;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .fa-location-dot {
   text-align: center;
   font-size: 1.3rem;
@@ -167,6 +188,16 @@ main {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  background-color: var(--main-color-hover);
+}
+
+.search-btn > i {
+  display: none;
 }
 
 .filters {
@@ -201,20 +232,29 @@ input {
   transition: 0.3s ease-in-out;
 }
 
-.filter-label:hover {
-  background-color: var(--main-color-light);
-  border: 2px solid var(--main-color-light);
+.filter-label :first-child {
+  /* position: absolute;
+  top: -2px;
+  left: -2px; */
+  transition: 0.3s ease-in-out;
+}
+
+.filter-label:hover :first-child {
+  /* position: absolute; */
+  /* top: -2px;
+  left: -2px; */
+  width: calc(100% + 6px);
 }
 
 .filters-icon {
+  display: flex;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
+  top: -2px;
+  left: -2px;
+  width: 56px;
+  height: 56px;
   background-color: var(--main-color-light);
-  border-radius: 50%;
-  transform: scale(1.1);
+  border-radius: 30px;
 }
 
 .filters-icon > i {
@@ -306,6 +346,10 @@ input {
 
 .card-hosting:hover {
   transform: scale(1.05);
+}
+
+a.card-hosting:hover {
+  color: black;
 }
 
 .card-img {
@@ -510,4 +554,9 @@ footer {
 
 .footer-container {
   line-height: 32px;
+}
+
+.footer-container > strong {
+  display: block;
+  margin-bottom: 16px;
 }
