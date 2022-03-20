@@ -3,7 +3,7 @@
   --main-color-hover: #1472ff;
   --main-color-light: #deebff;
   --secondary-color: #f2f2f2;
-  --border-color: #d9d9d9;
+  --border-color: #f2f2f2;
 
   --card-height-mobile: 220px;
   --hosting-grid-gap: 32px;
@@ -161,7 +161,7 @@ main {
 }
 
 .search-field {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--border-color);
   width: 200px;
   margin: 0;
 }
@@ -228,16 +228,10 @@ input {
 }
 
 .filter-label :first-child {
-  /* position: absolute;
-  top: -2px;
-  left: -2px; */
   transition: 0.3s ease-in-out;
 }
 
 .filter-label:hover :first-child {
-  /* position: absolute; */
-  /* top: -2px;
-  left: -2px; */
   width: calc(100% + 6px);
 }
 
