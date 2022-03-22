@@ -256,7 +256,7 @@ input {
   font-size: 19px;
 }
 
-.filter-label > span {
+.filters-text {
   font-weight: 700;
   padding-left: 46px;
 }
